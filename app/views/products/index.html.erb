@@ -3,10 +3,11 @@
 <div id="products">
   <% @products.each do |product| %>
     <div>
+    <a href="/products/<%=product.id%>">
      Name: <%= product.title %>
       Price:  <%= product.price %>
       Number:  <%= product.stock_quantity  %>
- 
+    </a>
     </div>
            <br>
   <% end %>
